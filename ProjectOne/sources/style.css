@@ -15,14 +15,18 @@ Color palette:
         url(./fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf) format('ttf');
 }
 
+html {
+    font-size: 16px;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: "Mono", sans-serif;
 }
 
-p {
-    font-size: 20px;
+p, li {
+    font-size: 1.5rem;
 }
 
 header {
@@ -47,7 +51,7 @@ header nav a {
     color: #76ABAE;
     text-decoration: none;
     display: inline;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 header nav a:hover {
@@ -68,7 +72,7 @@ main {
 main h1 {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 50px;
+    font-size: 2.75rem;
 }
 
 #main-mid {
@@ -93,7 +97,7 @@ main h1 {
 
 .underline {
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .ulist {
@@ -125,7 +129,7 @@ footer ul li {
 footer ul li a{
     text-decoration: none;
     color: #222831;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .whitel {
@@ -161,4 +165,40 @@ main a:hover {
 .colspan {
     text-align: center;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 620px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    html {
+        font-size: 10px;
+    }
+    .midmid {
+        flex-basis: 100%;
+    }
+     footer ul li a {
+        padding: 3px;
+    } 
+     footer ul {
+        padding: auto 0px;
+    }
+    
+
+    footer ul li {
+        padding: 0px;
+    }
+    .underline {
+        font-size: 1.3rem; 
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header nav ul li {
+        padding-right: 0px;
+    }
+   
 }
